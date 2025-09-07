@@ -1,0 +1,61 @@
+@use '_variables.scss' as *;
+
+.l-grid-header {
+    display: grid;
+    grid-template-columns: 1fr;
+    overflow: hidden;
+
+    @media (min-width: 1200px) {
+        grid-template-columns: 1fr 2fr 1fr;
+    } 
+
+    > * {
+        display: flex;
+        flex: 1 1 auto;
+        flex-flow: column wrap;
+        align-items: center;
+        justify-content: center;
+        padding: 1.5rem;
+        outline: 0.125rem solid;
+        border-bottom: 2px solid $color-dark;
+    }
+}
+
+.l-grid {
+    display: flex;
+    flex-wrap: wrap;
+    overflow: hidden;
+
+    > * {
+        display: flex;
+        flex: 1 1 auto;
+        flex-flow: column wrap;
+        align-items: center;
+        padding: 1.5rem;
+        outline: 0.125rem solid;
+
+        @media (min-width: 1200px) {
+            max-width: 50%;
+        }
+    }
+}
+
+
+.l-container {
+    max-width: 880px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.section {
+    padding: 3rem clamp(2rem, 2vw, 6rem);
+
+    &__titre {
+        font-family: $font-family-serif;
+        margin-bottom: 1rem;
+    }
+
+    &__list {
+        padding-left: 2rem;
+    }
+}

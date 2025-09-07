@@ -1,0 +1,18 @@
+@use '_variables.scss' as *;
+
+.o-button {
+    display: inline-flex;
+    padding: 1rem 2rem;
+    border: 2px solid $color-dark;
+    text-transform: uppercase;
+    background-color: $color-light;
+    font-weight: 700;
+    cursor: pointer;
+    transition: background-color, color 200ms, 200ms ease-in-out;
+
+    &:hover,
+    &:focus {
+        background-color: $color-dark;
+        color: $color-light;
+    }
+}

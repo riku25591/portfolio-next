@@ -1,0 +1,49 @@
+@use '_variables.scss' as *;
+
+.o-document {
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+
+    @media (min-width: 992px) {
+        padding: 3rem;
+    }
+
+    @media (min-width: 1200px) {
+        padding: 5rem;
+    }
+}
+
+.logo {
+    width: 250px;
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+.welcome {
+    font-size: 3rem;
+    font-family: $font-family-serif;
+    font-weight: 400;
+    line-height: 1.2em;
+
+    @media (max-width: 1199px) {
+        order: 2;
+    }
+}
+
+.intro {
+    padding: 5rem;
+    text-align: center;
+    font-family: $font-family-serif;
+    font-size: 1.6rem;
+    font-weight: 400;
+    border-bottom: 2px solid $color-dark;
+}
+
+footer {
+    padding-top: 2rem;
+    margin-top: auto;
+    text-align: center;
+}

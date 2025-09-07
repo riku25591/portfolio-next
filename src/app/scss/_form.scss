@@ -1,0 +1,38 @@
+@use '_variables.scss' as *;
+
+.c-form {
+    max-width: 50rem;
+    margin: 0 auto;
+    padding: 2rem;
+    background-color: #f0f0f0;
+
+    &__mandatory {
+        margin-bottom: 1rem;
+        font-style: italic;
+    }
+}
+
+.form-control {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2rem;
+
+    &__label {
+        font-size: 1.8rem;
+        font-weight: 700;
+        margin-bottom: .5rem;
+    }
+
+    &__input {
+        border: none;
+        border-bottom: 2px solid $color-dark;
+        padding: 1rem;
+    }
+
+    &__textarea {
+        border: none;
+        border-bottom: 2px solid $color-dark;
+        padding: 1rem;
+        min-height: 10rem;
+    }
+}

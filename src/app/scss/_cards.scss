@@ -1,0 +1,52 @@
+@use '_variables.scss' as *;
+
+.l-cards {
+    display: grid;
+    grid-template-columns: 1fr;
+    overflow: hidden;
+
+    @media (min-width: 768px) {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    @media (min-width: 992px) {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    @media (min-width: 1200px) {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+.c-card {
+    padding: 3rem;
+    position: relative;
+    outline: 0.125rem solid;
+
+    &__content {
+        margin-bottom: 1rem;
+    }
+
+    &__title {
+        margin-bottom: 1rem;
+    }
+
+    &__link {
+        text-decoration: none;
+    }
+
+    &__info {
+        font-weight: 400;
+        line-height: 1.5em;
+    }
+
+    &__label {
+        font-weight: 700;
+        min-width: 40px;
+        display: inline-flex;
+    }
+
+    &__link {
+
+    }
+}

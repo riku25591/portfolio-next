@@ -1,0 +1,31 @@
+@use '_variables.scss' as *;
+
+@mixin font-face(
+    $family,
+    $police,
+    $font-weight: normal,
+    $font-style: normal
+) {
+    font-family: $family;
+    src: url('./fonts/#{$police}.woff2') format('woff2'),
+    url('./fonts/#{$police}.woff') format('woff');
+    font-weight: $font-weight;
+    font-style: $font-style;
+    font-display: swap;
+}
+
+@font-face {
+    @include font-face('Source Sans Pro', 'source-sans-pro-v21-latin-300', 300);
+}
+
+@font-face {
+    @include font-face('Source Sans Pro', 'source-sans-pro-v21-latin-regular', 400);
+}
+
+@font-face {
+    @include font-face('Source Sans Pro', 'source-sans-pro-v21-latin-700', 700);
+}
+
+@font-face {
+    @include font-face('Pt Serif', 'pt-serif-v17-latin-regular', 400);
+}

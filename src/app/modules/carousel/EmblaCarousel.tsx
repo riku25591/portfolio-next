@@ -107,7 +107,7 @@ const EmblaCarousel: React.FC<PropType> = (props) => {
 
   return (
     <div className="embla">
-      <p className="embla__intro">Un petit aperçu des technologies avec lesquels j'ai l&apos;habitude de travailler</p>
+      <p className="embla__intro">Un petit aperçu des technologies avec lesquels j&apos;ai l&apos;habitude de travailler</p>
       <div className="embla__viewport" ref={emblaRef}>
         <div className="embla__container">
           {

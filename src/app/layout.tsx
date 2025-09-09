@@ -1,4 +1,4 @@
-import './App.scss';
+import './scss/App.scss';
 
 import Header from './modules/Header';
 import type { Metadata } from 'next'

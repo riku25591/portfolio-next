@@ -6,14 +6,15 @@ import { EmblaOptionsType } from 'embla-carousel'
 import LogoCSS3 from './public/logos/CSS3.webp'
 import LogoHTML5 from './public/logos/HTML5.webp'
 import LogoJalios from './public/logos/jalios.webp'
-import LogoJavascript from './public/logos/javascript.webp'
+import LogoTypescript from './public/logos/typescript.webp'
 import LogoCMSEolas from './public/logos/CMS.Eolas.webp'
 import LogoNextJS from './public/logos/next-js.webp'
 import LogoStorybook from './public/logos/storybook.webp'
 import LogoPlaywright from './public/logos/Playwright.webp'
 import LogoReact from './public/logos/React.webp'
 import LogoVite from './public/logos/vite.webp'
-import LogoWebpack from './public/logos/Webpack.webp'
+import LogoWebpack from './public/logos/webpack.webp'
+import LogoJest from './public/logos/jest.webp'
 import { StaticImageData } from "next/image";
 export default function Home() {
   
@@ -23,17 +24,16 @@ export default function Home() {
     LogoCSS3,
     LogoHTML5,
     LogoJalios,
-    LogoJavascript,
+    LogoTypescript,
     LogoCMSEolas,
     LogoNextJS,
     LogoStorybook,
     LogoPlaywright,
     LogoReact,
     LogoVite,
-    LogoWebpack
+    LogoWebpack,
+    LogoJest
   ]
-
-  console.log(SLIDES);
 
   return (
     <div className="m-home">

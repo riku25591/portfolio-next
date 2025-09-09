@@ -7,8 +7,7 @@
     $font-style: normal
 ) {
     font-family: $family;
-    src: url('./fonts/#{$police}.woff2') format('woff2'),
-    url('./fonts/#{$police}.woff') format('woff');
+    src: url('./fonts/#{$police}.woff2') format('woff2');
     font-weight: $font-weight;
     font-style: $font-style;
     font-display: swap;

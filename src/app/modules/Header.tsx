@@ -1,7 +1,5 @@
 'use client'
 
-import '../App.scss';
-
 import Link from 'next/link';
 import { usePathname } from 'next/navigation'
 import parse from "html-react-parser";
